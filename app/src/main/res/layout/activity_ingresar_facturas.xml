@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoc"
+    tools:context=".IngresarFacturasActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="2dp"
+        android:text="ID DE FACTURA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNoIdentidad"
+        app:layout_constraintEnd_toStartOf="@+id/txtNoIdentidad"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="40dp"
+        android:text="FECHA FACTURACION"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/txtIdCliente"
+        app:layout_constraintEnd_toStartOf="@+id/txtFechaFacturacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoIdentidad" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="14dp"
+        android:text="IDENTIDAD CLIENTE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtIdCliente"
+        app:layout_constraintEnd_toStartOf="@+id/txtIdCliente"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="3dp"
+        android:text="CODIGO PRODUCTO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCodigoProductoFactura"
+        app:layout_constraintEnd_toStartOf="@+id/txtCodigoProductoFactura"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="38dp"
+        android:text="CANTIDAD DE PRODUCTOS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/txtsubtotal"
+        app:layout_constraintEnd_toStartOf="@+id/txtCantidaddeProductos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoProductoFactura" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="3dp"
+        android:text="SUBTOTAL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/btnsubtotal"
+        app:layout_constraintEnd_toStartOf="@+id/btnsubtotal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIngresarFacturas"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:background="@color/black"
+        android:text="INGRESAR FACTURA"
+        app:layout_constraintBottom_toTopOf="@+id/btnVisualizarFacturas"
+        app:layout_constraintEnd_toStartOf="@+id/txvEstadoFactura"
+        app:layout_constraintStart_toStartOf="@+id/txvEstadoFactura"
+        app:layout_constraintTop_toBottomOf="@+id/txtsubtotal" />
+
+    <EditText
+        android:id="@+id/txtNoIdentidad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/txtFechaFacturacion"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIdCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/txtNoIdentidad" />
+
+    <EditText
+        android:id="@+id/txtIdCliente"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtCodigoProductoFactura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/txtCodigoProductoFactura"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdCliente" />
+
+    <EditText
+        android:id="@+id/txtCantidaddeProductos"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="86dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/txtsubtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdCliente" />
+
+    <TextView
+        android:id="@+id/txvEstadoFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresarFacturas" />
+
+    <Button
+        android:id="@+id/btnVisualizarFacturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="visualizar factura"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txvEstadoFactura"
+        app:layout_constraintStart_toStartOf="@+id/txvEstadoFactura"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresarFacturas" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="28dp"
+        android:text="INGRESAR FACTURA DE VENTA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/txtNoIdentidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsubtotal"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="26dp"
+        android:text="calcular"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtsubtotal"
+        app:layout_constraintEnd_toStartOf="@+id/txtsubtotal"
+        app:layout_constraintStart_toEndOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/txtsubtotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnIngresarFacturas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnsubtotal"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

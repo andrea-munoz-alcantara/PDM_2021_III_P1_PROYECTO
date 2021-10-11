@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondob"
+    tools:context=".BuscarProductoActivity">
+
+    <EditText
+        android:id="@+id/txtProductoBuscado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="91dp"
+        android:ems="10"
+        android:hint="CODIGO DE PRODUCTO A BUSCAR"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnBuscarProducto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBuscarProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="109dp"
+        android:text="BUSCAR PRODUCTO"
+        app:layout_constraintBottom_toTopOf="@+id/txvMensajeProducto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductoBuscado" />
+
+    <TextView
+        android:id="@+id/txvMensajeProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="127dp"
+        app:layout_constraintBottom_toTopOf="@+id/txvProductoBuscado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarProducto" />
+
+    <TextView
+        android:id="@+id/txvProductoBuscado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvMensajeProducto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

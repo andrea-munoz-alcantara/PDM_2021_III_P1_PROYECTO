@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoa"
+    tools:context=".BuscarClienteActivity">
+
+    <EditText
+        android:id="@+id/txtIngresoCodigoCliente"
+        android:layout_width="329dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:hint="INGRESE LA IDENTIDAD DEL CLIENTE"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnBuscarCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBuscarCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="125dp"
+        android:text="BUSCAR"
+        app:layout_constraintBottom_toTopOf="@+id/txvMensajeCliente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresoCodigoCliente" />
+
+    <TextView
+        android:id="@+id/txvClienteBuscado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="141dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvMensajeCliente" />
+
+    <TextView
+        android:id="@+id/txvMensajeCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/txvClienteBuscado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscarCliente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
